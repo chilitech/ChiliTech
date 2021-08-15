@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+configurations {
+    compile.exclude module: 'stax'
+    compile.exclude module: 'stax-api'
+    compile.exclude module: 'xpp3'
+}
+
+ext {
+    fastjsonVersion = '1.1.56.android'
+    okhttpVersion = '3.6.0'
+    retrofitVersion = '2.2.0'
+    simpleXmlVersion = '2.7.+'
+    greendaoVersion = '3.2.0'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation "junit:junit:$rootProject.junitVersion"
+
+    //DataBase
+    implementation "org.greenrobot:greendao:$greendaoVersion"
+
+    //fastjson
+    implementation "com.alibaba:fastjson:$fastjsonVersion"
+
+    //network
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+    api "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    api "com.squareup.retrofit2:converter-simplexml:$retrofitVersion"
+    implementation "org.simpleframework:simple-xml:$simpleXmlVersion"
+
+    api project(':base')
+
+    //Dagger2
+    api "com.google.dagger:dagger:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+    testImplementation "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+
+    //rxjava
+    api "io.reactivex.rxjava2:rxjava:2.1.0"
+    api "io.reactivex.rxjava2:rxandroid:2.0.1"
+    api "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+}
