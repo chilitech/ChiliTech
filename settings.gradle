@@ -1,1 +1,4 @@
 include ':app', ':base', ':data', ':domain'
+
+//rxjava2 demo
+include ':demo_rxjava2'
