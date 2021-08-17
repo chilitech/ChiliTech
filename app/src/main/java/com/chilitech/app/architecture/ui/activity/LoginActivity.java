@@ -75,11 +75,11 @@ public class LoginActivity extends DaggerBaseActivity implements LoginContract.V
 
     public void toLogin(View view) {
 
-        String username = activityLoginBinding.etUsername.getText().toString().trim();
-        String password = activityLoginBinding.etPassword.getText().toString().trim();
+//        String username = activityLoginBinding.etUsername.getText().toString().trim();
+//        String password = activityLoginBinding.etPassword.getText().toString().trim();
 
 
-        loginPresenter.login(username, password);
+        loginPresenter.login("username", "password");
     }
 
     @Override

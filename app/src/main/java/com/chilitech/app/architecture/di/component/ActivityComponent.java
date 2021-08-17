@@ -19,4 +19,20 @@ public interface ActivityComponent {
     AppCompatActivity activity();
 
     void inject(Activity activity);
+
+    void inject(MainActivity activity);
+
+    void inject(LoginActivity activity);
 }
+
+
+//@PerActivity
+//@Component(dependencies = ApplicationComponent.class, modules = ActivityModule.class)
+//public interface ActivityComponent {
+//
+//    Activity activity();
+//
+//    void inject(MainActivity activity);
+//
+//    void inject(LoginActivity activity);
+//}
