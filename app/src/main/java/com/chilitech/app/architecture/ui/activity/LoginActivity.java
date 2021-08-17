@@ -31,7 +31,7 @@ public class LoginActivity extends DaggerBaseActivity implements LoginContract.V
     @Inject
     UserPresenter userPresenter;
 
-    private ActivityLoginBinding activityLoginBinding;
+//    private ActivityLoginBinding activityLoginBinding;
 
     public static void goActivity(Context context) {
         Intent intent = new Intent(context, LoginActivity.class);
@@ -74,7 +74,7 @@ public class LoginActivity extends DaggerBaseActivity implements LoginContract.V
     }
 
     public void toLogin(View view) {
-
+        //TODO Kael databinding
 //        String username = activityLoginBinding.etUsername.getText().toString().trim();
 //        String password = activityLoginBinding.etPassword.getText().toString().trim();
 
