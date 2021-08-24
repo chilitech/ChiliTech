@@ -6,7 +6,7 @@ android {
     compileSdk 28
 
     defaultConfig {
-        applicationId "com.chilitech.demo_rxjava2"
+        applicationId "com.chilitech.demo_rxjava3"
         minSdk 24
         targetSdk 28
         versionCode 1
@@ -33,13 +33,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-
-
     implementation 'androidx.recyclerview:recyclerview:1.0.0-rc02'
 
-    // RxJava2 Dependencies
-    implementation 'io.reactivex.rxjava2:rxjava:3.0.0'
-    implementation 'io.reactivex.rxjava2:rxandroid:3.0.0'
+    //RxJava的依赖包
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
+    //RxAndroid的依赖包
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
 
     // FastAndroidNetworking Dependency
     implementation 'com.amitshekhar.android:rx2-android-networking:1.0.2'
