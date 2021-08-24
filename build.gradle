@@ -6,6 +6,11 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.0'
+
+        //demo_navigation 使用 Safe Args 传递安全的数据 start
+        def nav_version = "2.3.5"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        //demo_navigation 使用 Safe Args 传递安全的数据 end
     }
 }
 
