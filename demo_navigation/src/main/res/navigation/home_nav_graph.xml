@@ -15,7 +15,11 @@
         android:id="@+id/contentFragment"
         android:name="com.chilitech.navigation.ContentFragment"
         android:label="fragment_content"
-        tools:layout="@layout/fragment_content" />
+        tools:layout="@layout/fragment_content">
+        <argument
+            android:name="scene"
+            app:argType="string[]" />
+    </fragment>
 
     <action
         android:id="@+id/action_global_contentFragment"

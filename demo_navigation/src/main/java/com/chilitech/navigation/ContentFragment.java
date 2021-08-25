@@ -1,12 +1,12 @@
 package com.chilitech.navigation;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -53,12 +53,32 @@ public class ContentFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+//        Bundle bundle = getArguments();
+//        if(bundle != null)
+//        {
+//            String [] m = ContentFragmentArgs.fromBundle(bundle).getScene();
+//            String s;
+//        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+        //通过safe args完成参数接收
+        Bundle bundle = getArguments();
+        if(bundle != null)
+        {
+            String [] m = ContentFragmentArgs.fromBundle(getArguments()).getScene();
+            Log.e("wangxiaoqi", m.toString());
+        }
+
+
+
         return inflater.inflate(R.layout.fragment_content, container, false);
     }
 }

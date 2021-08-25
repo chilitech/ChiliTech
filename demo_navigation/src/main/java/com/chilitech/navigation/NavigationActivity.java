@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class NavigationActivity extends AppCompatActivity {
 
     private TextView tv1;
@@ -35,8 +38,20 @@ public class NavigationActivity extends AppCompatActivity {
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                Bundle bundle = new MainFragmentArgs.Builder().setUserName("Michael").setAge(30).build().toBundle();
+//
 
-                navController.navigate(R.id.action_global_contentFragment);
+
+                List<String> list = new ArrayList<>();
+                for (int i = 0; i < 10; i++) {
+                    list.add(i + "");
+                }
+
+
+String[] str = new String[]{"1", "2", "3"};
+
+                Bundle bundle = new ContentFragmentArgs.Builder(str).build().toBundle();
+                navController.navigate(R.id.action_global_contentFragment, bundle);
 //                Navigation.createNavigateOnClickListener(R.id.action_categoryDetailFragment_to_contentFragment);
 
 //                Navigation.findNavController(view).navigate(R.id.action_categoryDetailFragment_to_contentFragment);
