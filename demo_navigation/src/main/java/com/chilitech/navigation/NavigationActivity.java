@@ -69,6 +69,9 @@ String[] str = new String[]{"1", "2", "3"};
 
             }
         });
+
+
+        FocusActivity.goActivity(this);
     }
 
     @Override
