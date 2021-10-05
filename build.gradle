@@ -1,4 +1,7 @@
 buildscript {
+
+    apply from: 'config.gradle'
+
     repositories {
         mavenCentral()
         jcenter()

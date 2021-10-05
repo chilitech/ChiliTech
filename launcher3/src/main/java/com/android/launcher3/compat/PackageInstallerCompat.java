@@ -18,19 +18,17 @@ package com.android.launcher3.compat;
 
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.pm.PackageInstaller;
 import android.content.pm.PackageInstaller.SessionInfo;
 import android.os.Process;
 import android.os.UserHandle;
-
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
 
 import androidx.annotation.NonNull;
 
 import com.android.launcher3.Utilities;
 import com.android.launcher3.util.PackageUserKey;
+
+import java.util.HashMap;
+import java.util.List;
 
 public abstract class PackageInstallerCompat {
 

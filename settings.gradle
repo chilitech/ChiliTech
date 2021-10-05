@@ -1,8 +1,26 @@
-include ':app', ':base', ':data', ':domain'
+//demo模块
+include ':app'
+
+//基础库模块
+include ':base'
+
+//底层数据模块
+include ':data'
+
+//领域模型
+include ':domain'
 
 //rxjava3 demo
 include ':demo_rxjava3'
 
+//navigation demo
 include ':demo_navigation'
+
+//高斯模糊
 include ':baseview'
+
+//launcher3
 //include ':launcher3'
+
+//ble
+include ':fastblelib'

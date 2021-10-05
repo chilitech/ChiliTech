@@ -15,6 +15,8 @@
  */
 package com.android.launcher3.model;
 
+import static android.os.Process.myUserHandle;
+
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -34,8 +36,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import static android.os.Process.myUserHandle;
 
 /**
  * Helper class to send broadcasts to package installers that have:

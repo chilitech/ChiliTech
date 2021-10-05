@@ -16,7 +16,6 @@
 package com.android.launcher3.anim;
 
 import static androidx.dynamicanimation.animation.FloatPropertyCompat.createFloatPropertyCompat;
-
 import static com.android.launcher3.config.FeatureFlags.QUICKSTEP_SPRINGS;
 
 import android.animation.Animator;
@@ -29,11 +28,11 @@ import android.os.Looper;
 import android.util.FloatProperty;
 import android.util.Log;
 
-import java.util.ArrayList;
-
 import androidx.dynamicanimation.animation.DynamicAnimation.OnAnimationEndListener;
 import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.dynamicanimation.animation.SpringForce;
+
+import java.util.ArrayList;
 
 /**
  * This animator allows for an object's property to be be controlled by an {@link ObjectAnimator} or

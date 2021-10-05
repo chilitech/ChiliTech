@@ -38,14 +38,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.android.launcher3.R;
-import com.android.launcher3.config.FeatureFlags;
-import com.android.launcher3.config.FlagTogglerPrefUi;
-import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
-
-import java.util.List;
-import java.util.Set;
-
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceDataStore;
@@ -53,6 +45,14 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.PreferenceViewHolder;
 import androidx.preference.SwitchPreference;
+
+import com.android.launcher3.R;
+import com.android.launcher3.config.FeatureFlags;
+import com.android.launcher3.config.FlagTogglerPrefUi;
+import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * Dev-build only UI allowing developers to toggle flag settings and plugins.

@@ -20,9 +20,9 @@ import android.content.Intent;
 import android.view.View;
 
 import com.android.launcher3.R;
+import com.android.launcher3.logging.StatsLogUtils.LogStateProvider;
 import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.util.ResourceBasedOverride;
-import com.android.launcher3.logging.StatsLogUtils.LogStateProvider;
 
 /**
  * Handles the user event logging in Q.

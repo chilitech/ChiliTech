@@ -29,14 +29,14 @@ import android.os.Build;
 import android.os.Process;
 
 import com.android.launcher3.FastBitmapDrawable;
-import com.android.launcher3.WorkspaceItemInfo;
-import com.android.launcher3.icons.IconCache;
 import com.android.launcher3.LauncherAnimUtils;
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherSettings;
 import com.android.launcher3.R;
+import com.android.launcher3.WorkspaceItemInfo;
 import com.android.launcher3.compat.LauncherAppsCompatVO;
 import com.android.launcher3.compat.ShortcutConfigActivityInfo;
+import com.android.launcher3.icons.IconCache;
 
 /**
  * Extension of ShortcutConfigActivityInfo to be used in the confirmation prompt for pin item

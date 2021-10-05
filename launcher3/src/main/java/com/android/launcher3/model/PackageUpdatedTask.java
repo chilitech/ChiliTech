@@ -16,6 +16,7 @@
 package com.android.launcher3.model;
 
 import static com.android.launcher3.WorkspaceItemInfo.FLAG_AUTOINSTALL_ICON;
+import static com.android.launcher3.WorkspaceItemInfo.FLAG_RESTORED_ICON;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -54,9 +55,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
-
-import static com.android.launcher3.WorkspaceItemInfo.FLAG_AUTOINSTALL_ICON;
-import static com.android.launcher3.WorkspaceItemInfo.FLAG_RESTORED_ICON;
 
 /**
  * Handles updates due to changes in package manager (app installed/updated/removed)

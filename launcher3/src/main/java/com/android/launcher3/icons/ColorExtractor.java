@@ -18,6 +18,7 @@ package com.android.launcher3.icons;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.util.SparseArray;
+
 import java.util.Arrays;
 
 /**

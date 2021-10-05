@@ -17,14 +17,14 @@ package com.android.launcher3.uioverrides.plugins;
 import android.content.ComponentName;
 import android.content.Context;
 
+import androidx.preference.PreferenceDataStore;
+
 import com.android.launcher3.util.MainThreadInitializedObject;
 import com.android.systemui.plugins.Plugin;
 import com.android.systemui.plugins.PluginListener;
 
 import java.util.Collections;
 import java.util.Set;
-
-import androidx.preference.PreferenceDataStore;
 
 public class PluginManagerWrapper {
 

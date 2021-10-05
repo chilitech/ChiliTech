@@ -29,8 +29,8 @@ import com.android.launcher3.ItemInfo;
 import com.android.launcher3.LauncherAppWidgetInfo;
 import com.android.launcher3.LauncherSettings;
 import com.android.launcher3.PromiseAppInfo;
-import com.android.launcher3.WorkspaceItemInfo;
 import com.android.launcher3.Workspace;
+import com.android.launcher3.WorkspaceItemInfo;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.logging.DumpTargetWrapper;
 import com.android.launcher3.shortcuts.ShortcutKey;
@@ -40,7 +40,6 @@ import com.android.launcher3.util.IntSparseArrayMap;
 import com.android.launcher3.util.ItemInfoMatcher;
 import com.android.launcher3.util.ViewOnDrawExecutor;
 import com.android.launcher3.widget.WidgetListRowEntry;
-
 
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;

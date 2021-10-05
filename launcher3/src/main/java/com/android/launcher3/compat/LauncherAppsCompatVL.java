@@ -34,6 +34,9 @@ import android.os.UserHandle;
 import android.util.ArrayMap;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.android.launcher3.compat.ShortcutConfigActivityInfo.ShortcutConfigActivityInfoVL;
 import com.android.launcher3.testing.TestProtocol;
 import com.android.launcher3.util.LooperExecutor;
@@ -42,9 +45,6 @@ import com.android.launcher3.util.PackageUserKey;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 public class LauncherAppsCompatVL extends LauncherAppsCompat {
 

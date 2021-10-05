@@ -17,7 +17,6 @@
 package com.android.launcher3.graphics;
 
 import static android.view.View.VISIBLE;
-
 import static com.android.launcher3.LauncherState.HOTSEAT_ICONS;
 import static com.android.launcher3.LauncherState.OVERVIEW;
 

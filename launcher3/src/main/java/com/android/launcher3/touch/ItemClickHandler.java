@@ -25,8 +25,6 @@ import static com.android.launcher3.Launcher.REQUEST_RECONFIGURE_APPWIDGET;
 import static com.android.launcher3.model.AppLaunchTracker.CONTAINER_ALL_APPS;
 
 import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.LauncherApps;
 import android.content.pm.PackageInstaller.SessionInfo;

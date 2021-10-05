@@ -23,9 +23,9 @@ import android.content.Context;
 import android.graphics.Color;
 import android.util.Log;
 
-import java.lang.reflect.Method;
-
 import androidx.annotation.Nullable;
+
+import java.lang.reflect.Method;
 
 @TargetApi(27)
 public class WallpaperManagerCompatVOMR1 extends WallpaperManagerCompat {

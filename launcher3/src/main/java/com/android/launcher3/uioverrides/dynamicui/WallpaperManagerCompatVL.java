@@ -16,7 +16,6 @@
 package com.android.launcher3.uioverrides.dynamicui;
 
 import static android.app.WallpaperManager.FLAG_SYSTEM;
-
 import static com.android.launcher3.Utilities.getDevicePrefs;
 
 import android.app.WallpaperInfo;
@@ -44,12 +43,12 @@ import android.os.ParcelFileDescriptor;
 import android.util.Log;
 import android.util.Pair;
 
+import androidx.annotation.Nullable;
+
 import com.android.launcher3.icons.ColorExtractor;
 
 import java.io.IOException;
 import java.util.ArrayList;
-
-import androidx.annotation.Nullable;
 
 public class WallpaperManagerCompatVL extends WallpaperManagerCompat {
 

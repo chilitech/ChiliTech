@@ -16,7 +16,6 @@
 package com.android.launcher3.widget;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
-
 import static com.android.launcher3.icons.GraphicsUtils.setColorAlphaBound;
 import static com.android.launcher3.logging.LoggerUtils.newContainerTarget;
 

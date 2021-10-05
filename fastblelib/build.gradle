@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.versionControl.versionCode
+        versionName rootProject.ext.versionControl.versonName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+}
+
+task makeAAR(type: Copy) {
+    from('build/outputs/aar/')
+    into('build/aarFloder/')
+    include('fastblelib-release.aar')
+    rename ('fastblelib-release.aar', 'FastBLE-' + rootProject.ext.versionControl.versonName + '.aar' )
+}
+makeAAR.dependsOn(build)

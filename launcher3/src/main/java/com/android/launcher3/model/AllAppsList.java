@@ -28,6 +28,9 @@ import android.os.Process;
 import android.os.UserHandle;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.android.launcher3.AppFilter;
 import com.android.launcher3.AppInfo;
 import com.android.launcher3.PromiseAppInfo;
@@ -45,9 +48,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.function.Consumer;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 
 /**

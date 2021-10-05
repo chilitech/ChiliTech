@@ -20,7 +20,6 @@ import static android.view.MotionEvent.ACTION_DOWN;
 import static android.view.MotionEvent.ACTION_MOVE;
 import static android.view.MotionEvent.ACTION_POINTER_UP;
 import static android.view.MotionEvent.ACTION_UP;
-
 import static com.android.launcher3.LauncherState.NORMAL;
 
 import android.graphics.PointF;
@@ -38,9 +37,9 @@ import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.Workspace;
 import com.android.launcher3.dragndrop.DragLayer;
-import com.android.launcher3.views.OptionsPopupView;
 import com.android.launcher3.userevent.nano.LauncherLogProto.Action;
 import com.android.launcher3.userevent.nano.LauncherLogProto.ContainerType;
+import com.android.launcher3.views.OptionsPopupView;
 
 /**
  * Helper class to handle touch on empty space in workspace and show options popup on long press

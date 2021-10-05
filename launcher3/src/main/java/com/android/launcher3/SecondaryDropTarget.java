@@ -2,7 +2,6 @@ package com.android.launcher3;
 
 import static android.appwidget.AppWidgetManager.INVALID_APPWIDGET_ID;
 import static android.appwidget.AppWidgetProviderInfo.WIDGET_FEATURE_RECONFIGURABLE;
-
 import static com.android.launcher3.ItemInfoWithIcon.FLAG_SYSTEM_MASK;
 import static com.android.launcher3.ItemInfoWithIcon.FLAG_SYSTEM_NO;
 import static com.android.launcher3.LauncherSettings.Favorites.CONTAINER_DESKTOP;

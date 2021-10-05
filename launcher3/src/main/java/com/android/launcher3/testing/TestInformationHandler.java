@@ -16,7 +16,6 @@
 package com.android.launcher3.testing;
 
 import static android.graphics.Bitmap.Config.ARGB_8888;
-
 import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
 
 import android.content.Context;

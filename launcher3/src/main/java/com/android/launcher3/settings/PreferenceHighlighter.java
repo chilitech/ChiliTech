@@ -27,12 +27,12 @@ import android.graphics.Paint;
 import android.util.Property;
 import android.view.View;
 
-import com.android.launcher3.util.Themes;
-
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration;
 import androidx.recyclerview.widget.RecyclerView.State;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+
+import com.android.launcher3.util.Themes;
 
 /**
  * Utility class for highlighting a preference

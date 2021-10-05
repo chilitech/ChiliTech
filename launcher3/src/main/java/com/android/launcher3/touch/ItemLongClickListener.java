@@ -17,7 +17,6 @@ package com.android.launcher3.touch;
 
 import static android.view.View.INVISIBLE;
 import static android.view.View.VISIBLE;
-
 import static com.android.launcher3.LauncherState.ALL_APPS;
 import static com.android.launcher3.LauncherState.NORMAL;
 import static com.android.launcher3.LauncherState.OVERVIEW;
@@ -35,8 +34,6 @@ import com.android.launcher3.dragndrop.DragController;
 import com.android.launcher3.dragndrop.DragOptions;
 import com.android.launcher3.folder.Folder;
 import com.android.launcher3.testing.TestProtocol;
-
-import java.util.Arrays;
 
 /**
  * Class to handle long-clicks on workspace items and start drag as a result.

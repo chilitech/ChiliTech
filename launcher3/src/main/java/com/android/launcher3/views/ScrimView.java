@@ -17,9 +17,7 @@ package com.android.launcher3.views;
 
 import static android.content.Context.ACCESSIBILITY_SERVICE;
 import static android.view.MotionEvent.ACTION_DOWN;
-
 import static androidx.core.graphics.ColorUtils.compositeColors;
-
 import static com.android.launcher3.LauncherState.ALL_APPS;
 import static com.android.launcher3.LauncherState.NORMAL;
 import static com.android.launcher3.anim.Interpolators.ACCEL;

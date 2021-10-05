@@ -19,7 +19,6 @@ package com.android.launcher3.util;
 import android.content.Context;
 import android.util.Log;
 
-import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
 
 import java.io.ByteArrayOutputStream;

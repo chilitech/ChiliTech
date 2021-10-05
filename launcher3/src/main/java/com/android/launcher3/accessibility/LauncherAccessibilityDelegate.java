@@ -1,7 +1,6 @@
 package com.android.launcher3.accessibility;
 
 import static android.view.accessibility.AccessibilityNodeInfo.ACTION_LONG_CLICK;
-
 import static com.android.launcher3.LauncherState.NORMAL;
 
 import android.app.AlertDialog;
@@ -28,7 +27,6 @@ import com.android.launcher3.FolderInfo;
 import com.android.launcher3.ItemInfo;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.LauncherAppWidgetInfo;
-import com.android.launcher3.LauncherSettings;
 import com.android.launcher3.LauncherSettings.Favorites;
 import com.android.launcher3.PendingAddItemInfo;
 import com.android.launcher3.Workspace;

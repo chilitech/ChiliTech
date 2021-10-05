@@ -26,8 +26,6 @@ import android.util.SparseIntArray;
 import android.view.MotionEvent;
 import android.view.View;
 
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.android.launcher3.BaseRecyclerView;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.ItemInfo;
@@ -35,7 +33,6 @@ import com.android.launcher3.Launcher;
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.R;
 import com.android.launcher3.allapps.AllAppsGridAdapter.AppsGridLayoutManager;
-import com.android.launcher3.compat.AccessibilityManagerCompat;
 import com.android.launcher3.logging.StatsLogUtils.LogContainerProvider;
 import com.android.launcher3.userevent.nano.LauncherLogProto.ContainerType;
 import com.android.launcher3.userevent.nano.LauncherLogProto.Target;

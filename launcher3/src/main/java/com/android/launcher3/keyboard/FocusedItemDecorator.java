@@ -20,11 +20,11 @@ import android.graphics.Canvas;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
 
-import com.android.launcher3.keyboard.FocusIndicatorHelper.SimpleFocusIndicatorHelper;
-
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration;
 import androidx.recyclerview.widget.RecyclerView.State;
+
+import com.android.launcher3.keyboard.FocusIndicatorHelper.SimpleFocusIndicatorHelper;
 
 /**
  * {@link ItemDecoration} for drawing and animating focused view background.

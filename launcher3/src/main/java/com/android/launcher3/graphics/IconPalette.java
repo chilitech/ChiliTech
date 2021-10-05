@@ -23,10 +23,10 @@ import android.content.Context;
 import android.graphics.Color;
 import android.util.Log;
 
+import androidx.core.graphics.ColorUtils;
+
 import com.android.launcher3.R;
 import com.android.launcher3.util.Themes;
-
-import androidx.core.graphics.ColorUtils;
 
 /**
  * Contains colors based on the dominant color of an icon.

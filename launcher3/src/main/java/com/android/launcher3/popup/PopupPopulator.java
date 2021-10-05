@@ -22,6 +22,9 @@ import android.os.Handler;
 import android.os.UserHandle;
 import android.service.notification.StatusBarNotification;
 
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+
 import com.android.launcher3.ItemInfo;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.WorkspaceItemInfo;
@@ -37,9 +40,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 
 /**
  * Contains logic relevant to populating a {@link PopupContainerWithArrow}. In particular,

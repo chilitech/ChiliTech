@@ -19,7 +19,6 @@ package com.android.launcher3.views;
 import static android.view.MotionEvent.ACTION_CANCEL;
 import static android.view.MotionEvent.ACTION_DOWN;
 import static android.view.MotionEvent.ACTION_UP;
-
 import static com.android.launcher3.util.DefaultDisplay.getSingleFrameMs;
 
 import android.annotation.TargetApi;

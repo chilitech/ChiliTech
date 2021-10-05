@@ -17,10 +17,10 @@ package com.android.launcher3.widget;
 
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+
 import com.android.launcher3.BubbleTextView;
 import com.android.launcher3.R;
-
-import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 public class WidgetsRowViewHolder extends ViewHolder {
 
