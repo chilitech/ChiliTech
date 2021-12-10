@@ -1,14 +1,14 @@
 ext {
     versionControl = [
-            versionCode: 240,
-            versonName : "2.4.0"
+            versionCode: 1,
+            versonName : "1.0.0"
     ]
 
     android = [
-            minSdkVersion    : 14,
-            targetSdkVersion : 30,
-            compileSdkVersion: 30,
-            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 28,
+            targetSdkVersion : 31,
+            compileSdkVersion: 31,
+            buildToolsVersion: "30.0.2",
     ]
 
 }
