@@ -4,14 +4,15 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "com.chilitech.demo_navigation"
-        minSdk 24
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

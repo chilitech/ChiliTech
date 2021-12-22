@@ -25,3 +25,9 @@ include ':baseview'
 //ble
 include ':fastblelib'
 include ':tablayout_viewpager2'
+include ':mvvm'
+
+//事件分发组件库demo
+include ':livedatabus-demo'
+//事件分发组件库
+include ':livedatabus'
