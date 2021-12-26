@@ -59,4 +59,8 @@ dependencies {
     testImplementation "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
 
     api project(':domain')
+
+
+    //查看gradle源码 通过这种方式来查看gradle源码，bin改成all
+    compileOnly 'com.android.tools.build:gradle:4.0.1'
 }

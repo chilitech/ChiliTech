@@ -31,3 +31,5 @@ include ':mvvm'
 include ':livedatabus-demo'
 //事件分发组件库
 include ':livedatabus'
+//事件分发组件库
+include ':event'
