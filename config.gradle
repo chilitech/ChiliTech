@@ -43,6 +43,7 @@ ext {
             butterknife_version = "10.0.0",
             retrofit_version = "2.6.1",
             lifecycle_version = "2.2.0",
+            arch_version = "2.1.0"
     ]
     dependencies = [
             appcompat                              : "androidx.appcompat:appcompat:1.0.0",
@@ -114,6 +115,38 @@ ext {
             "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.0.0",
             //MVVMHabit
             "MVVMHabit"                            : "com.github.goldze:MVVMHabit:4.0.0",
+
+            /*
+            // ViewModel
+            implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+            // LiveData
+            implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+            // 只有Lifecycles (不带 ViewModel or LiveData)
+            implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+
+            // Saved state module for ViewModel
+            implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+            // lifecycle注解处理器
+            annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+            // 替换 - 如果使用Java8,就用这个替换上面的lifecycle-compiler
+            implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+            看着有很多，实际上如果只使用Lifecycle，只需要引入lifecycle-runtime即可。
+            但通常都是和 ViewModel、 LiveData 配套使用的，所以lifecycle-viewmodel、lifecycle-livedata 一般也会引入。
+
+            //以下按需引入
+            // 可选 - 帮助实现Service的LifecycleOwner
+            implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version"
+            // 可选 - ProcessLifecycleOwner给整个 app进程 提供一个lifecycle
+            implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+            // 可选 - ReactiveStreams support for LiveData
+            implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version"
+            // 可选 - Test helpers for LiveData
+            testImplementation "androidx.arch.core:core-testing:$arch_version"
+            */
+
+
     ]
 
 
