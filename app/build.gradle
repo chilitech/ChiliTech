@@ -1,24 +1,11 @@
-// 1、取出isComponent字段
-def isComponent = rootProject.ext.isComponent
-
-// 2、根据isComponent字段，来确定当前是集成化 还是组件化
-if (isComponent) {
-    apply plugin: 'com.android.application'
-} else {
-    apply plugin: 'com.android.library'
-}
-
-def appId = rootProject.ext.appId
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        // 3、如果当前是组件化，那么就需要 applicationId
-        if (isComponent) {
-            applicationId appId.app
-        }
+
         applicationId "com.chilitech.app.architecture"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
