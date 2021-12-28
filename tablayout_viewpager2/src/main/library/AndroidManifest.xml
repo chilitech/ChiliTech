@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mukesh.viewpager2">
+
+    <application>
+
+        <activity
+            android:name=".view.fragments.FragmentViewPagerActivity"
+            android:label="Fragment Slider" />
+        <activity
+            android:name=".view.welcomePage.ViewsSliderActivity"
+            android:theme="@style/FullScreen" />
+        <activity android:name=".view.home.MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

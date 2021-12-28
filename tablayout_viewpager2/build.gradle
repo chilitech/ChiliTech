@@ -1,9 +1,4 @@
-// 1、取出isComponent字段
-def isComponent = rootProject.ext.isComponent
-def appId = rootProject.ext.appId
-
-// 2、根据isComponent字段，来确定当前是集成化 还是组件化
-if (isComponent) {
+if (isComponent.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'
@@ -13,9 +8,8 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
     defaultConfig {
-        // 3、如果当前是组件化，那么就需要 applicationId
-        if (isComponent) {
-            applicationId appId.tablayout_viewpager2
+        if (isComponent.toBoolean()) {
+            applicationId "com.mukesh.viewpager2"
         }
         minSdkVersion 21
         targetSdkVersion 29
@@ -35,6 +29,18 @@ android {
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
+    }
+
+    sourceSets {
+        main {
+            // 1.单独调试与集成调试时使用不同的 AndroidManifest.xml 文件
+            // 我们还可以根据不同工程配置不同的 Java 源代码、不同的 resource 资源文件等的
+            if (isComponent.toBoolean()) {
+                manifest.srcFile 'src/main/library/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+        }
     }
 }
 

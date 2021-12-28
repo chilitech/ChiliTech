@@ -11,15 +11,6 @@ ext {
             buildToolsVersion: "30.0.2",
     ]
 
-    // true:可执行Module false:Library
-    isComponent = true
-
-    //各模块AppId 字典配置
-    appId = [
-            app                 : "com.chilitech.app.architecture",
-            tablayout_viewpager2: "com.mukesh.viewpager2"
-    ]
-
     //version配置
     versions = [
             "support-version": "1.0.0",
