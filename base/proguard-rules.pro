@@ -106,9 +106,9 @@
 # Keep the support library
 -keep class android.support.** { *; }
 -keep interface android.support.** { *; }
--keep class * extends android.support.design.widget.CoordinatorLayout$Behavior {
-    *;
-}
+#-keep class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+#    *;
+#}
 
 -keep interface android.support.** { *; }
 

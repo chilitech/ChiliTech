@@ -34,7 +34,7 @@ dependencies {
     annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0'
 
     //liveeventbus
-    implementation project(':livedatabus')
+    implementation project(':base-livedatabus')
 //    implementation 'io.github.jeremyliao:live-event-bus:1.7.3.1'
 
 

@@ -1,3 +1,22 @@
+//---------基础组件---------
+
+//mvvm的demo
+include ':base-mvvm-demo'
+
+//mvvm lib
+include ':base-mvvm'
+
+//livedata事件分发组件库demo
+include ':base-livedatabus-demo'
+
+//livedata事件分发组件库
+include ':base-livedatabus'
+
+//EventBus事件分发组件库
+include ':base-event'
+
+//---------基础组件---------
+
 //demo模块
 include ':app'
 
@@ -24,12 +43,8 @@ include ':baseview'
 
 //ble
 include ':fastblelib'
-include ':tablayout_viewpager2'
+include ':tablayoutviewpager2'
 
-//事件分发组件库demo
-include ':livedatabus-demo'
-//事件分发组件库
-include ':livedatabus'
-//事件分发组件库
-include ':event'
+
+
 
