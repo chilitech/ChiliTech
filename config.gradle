@@ -54,6 +54,8 @@ ext {
 
             fastJson                               : "com.alibaba:fastjson:1.2.48",
 
+            //JetPack中的管理启动的库，利用ContentProvider来实现的自启动，调用时机在Application的onCreate之前，两个方法，一个初始化，一个配置依赖，这个类可以继承
+            startup                                : "androidx.startup:startup-runtime:1.1.0",
 
             viewModel                              : "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycle_version",
             /*room 数据库 ---start*/

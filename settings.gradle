@@ -42,8 +42,8 @@ include ':baseview'
 //include ':launcher3'
 
 //ble
-include ':fastblelib'
-include ':tablayoutviewpager2'
+include ':base_fastblelib'
+include ':demo_tablayoutviewpager2'
 
 
 
