@@ -7,7 +7,6 @@ import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.OnLifecycleEvent;
 
 
-
 public interface IBaseViewModel extends LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
@@ -30,14 +29,4 @@ public interface IBaseViewModel extends LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     void onPause();
-
-    /**
-     * 注册RxBus
-     */
-    void registerRxBus();
-
-    /**
-     * 移除RxBus
-     */
-    void removeRxBus();
 }

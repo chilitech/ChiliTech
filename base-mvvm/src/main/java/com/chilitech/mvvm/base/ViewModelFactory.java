@@ -9,11 +9,10 @@ import androidx.lifecycle.ViewModelProvider;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-
 public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
+
     @SuppressLint("StaticFieldLeak")
     private static volatile ViewModelFactory INSTANCE;
-
     private final Application mApplication;
 
     public static ViewModelFactory getInstance(Application application) {
@@ -27,7 +26,6 @@ public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
         }
         return INSTANCE;
     }
-
 
     private ViewModelFactory(Application application) {
         mApplication = application;

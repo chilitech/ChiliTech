@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="kaelViewModel"
+            type="com.chilitech.mvvmdemo.KaelMvvmViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".KaelMvvmTestActivity">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/orange"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:onClick="@{kaelViewModel::onClickMe}"
+            android:text="@{kaelViewModel.mutableLiveData}"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+    </RelativeLayout>
+</layout>
