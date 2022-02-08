@@ -1,8 +1,6 @@
 package com.chilitech.mvvmdemo;
 
 import android.app.Application;
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -22,12 +20,29 @@ public class KaelMvvmViewModel extends BaseViewModel {
         super(application);
         mutableLiveData.setValue("k");
 
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+
+        new Thread(new Runnable() {
             @Override
             public void run() {
-                mutableLiveData.setValue("Kael Wong");
+                for (int i = 0; i < 10; i++) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    //可以主线程调用，也可以子线程调用
+                    mutableLiveData.postValue("Kael Wong : " + i);
+                }
             }
-        }, 2_000);
+        }).start();
+
+//        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+        //主线程中调用
+//                mutableLiveData.setValue("Kael Wong");
+//            }
+//        }, 2_000);
     }
 
     @Override
